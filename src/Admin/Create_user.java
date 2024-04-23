@@ -106,7 +106,6 @@ return false;
         id = new javax.swing.JTextField();
         ln = new javax.swing.JTextField();
         em = new javax.swing.JTextField();
-        ps = new javax.swing.JTextField();
         at = new javax.swing.JComboBox<>();
         jLabel11 = new javax.swing.JLabel();
         ut = new javax.swing.JComboBox<>();
@@ -119,6 +118,7 @@ return false;
         clear = new javax.swing.JButton();
         cancel = new javax.swing.JButton();
         ref = new javax.swing.JButton();
+        ps = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -342,15 +342,15 @@ return false;
                 .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(em, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addGap(27, 27, 27)
-                .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(un, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
                 .addGap(18, 18, 18)
-                .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ps, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
+                .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel7)
+                    .addComponent(un, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+                .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(ps, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(at, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
@@ -407,7 +407,8 @@ return false;
  }else{
    dbConnector dbc = new dbConnector();
 if( dbc.insertData("INSERT INTO tbl_user(u_fname, u_lname, u_email,u_username, u_password, u_type, u_status)"
-        + "VALUES ('"+fn.getText()+"', '"+ln.getText()+"', '"+em.getText()+"', '" + un.getText()+"', '" +ps.getText()+"', '"+ at.getSelectedItem()+"', ' Pending')"))
+          
+     + "VALUES ('"+fn.getText()+"', '"+ln.getText()+"', '"+em.getText()+"', '" + un.getText()+"', '" +ps.getText()+"', '"+ at.getSelectedItem()+"', ' Pending')"))
 {
      JOptionPane.showMessageDialog(null, "Registration Success!");
     Login Ig = new Login();

@@ -6,6 +6,8 @@
 package class_record_app;
 
 import config.dbConnector;
+import config.passwordHasher;
+import java.security.NoSuchAlgorithmException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
@@ -67,7 +69,6 @@ return false;
         fn = new javax.swing.JTextField();
         ln = new javax.swing.JTextField();
         em = new javax.swing.JTextField();
-        ps = new javax.swing.JTextField();
         un = new javax.swing.JTextField();
         at = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
@@ -75,6 +76,7 @@ return false;
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        pass = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -166,7 +168,7 @@ return false;
                             .addComponent(un, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
                             .addComponent(em, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(ln)
-                            .addComponent(ps)))
+                            .addComponent(pass)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(13, 13, 13)
                         .addComponent(jLabel5)
@@ -188,11 +190,12 @@ return false;
                         .addComponent(jLabel2)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(25, 25, 25)
-                                .addComponent(fn, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)))))
+                                .addComponent(fn, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(13, 13, 13))
         );
         jPanel2Layout.setVerticalGroup(
@@ -214,13 +217,15 @@ return false;
                     .addComponent(em, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(un, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addComponent(un, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ps, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(pass, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
@@ -270,19 +275,21 @@ return false;
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if(fn.getText().isEmpty() || ln.getText().isEmpty() || em.getText().isEmpty()
-|| un.getText().isEmpty() || ps.getText().isEmpty()){
+|| un.getText().isEmpty() || pass.getText().isEmpty()){
       JOptionPane.showMessageDialog(null, "All fields are required!");
  
-        }else if(ps.getText().length() <8){
+        }else if(pass.getText().length() <8){
     JOptionPane.showMessageDialog(null, "Password character should be 8 above");
-    ps.setText("");
+    pass.setText("");
  
       } else if (duplicateCheck()){
          System.out.println("duplicate Exist");
  }else{
    dbConnector dbc = new dbConnector();
+   try{
+String ps=  passwordHasher.hashPassword(pass.getText());
 if( dbc.insertData("INSERT INTO tbl_user(u_fname, u_lname, u_email,u_username, u_password, u_type, u_status)"
-        + "VALUES ('"+fn.getText()+"', '"+ln.getText()+"', '"+em.getText()+"', '" + un.getText()+"', '" +ps.getText()+"', '"+ at.getSelectedItem()+"', ' Pending')"))
+        + "VALUES ('"+fn.getText()+"', '"+ln.getText()+"', '"+em.getText()+"', '" + un.getText()+"', '" +pass.getText()+"', '"+ at.getSelectedItem()+"', ' Pending')"))
 {
      JOptionPane.showMessageDialog(null, "Registration Success!");
     Login Ig = new Login();
@@ -292,8 +299,10 @@ if( dbc.insertData("INSERT INTO tbl_user(u_fname, u_lname, u_email,u_username, u
 }else{
    JOptionPane.showMessageDialog(null, "Connection Error!");
 }
-}    
-  
+}catch (NoSuchAlgorithmException ex) {
+        System.out.println(""+ex);
+        }
+      }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -363,7 +372,7 @@ if( dbc.insertData("INSERT INTO tbl_user(u_fname, u_lname, u_email,u_username, u
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField ln;
-    private javax.swing.JTextField ps;
+    private javax.swing.JPasswordField pass;
     private javax.swing.JTextField un;
     // End of variables declaration//GEN-END:variables
 

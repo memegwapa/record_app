@@ -342,7 +342,8 @@ this.dispose();
 }catch(SQLException ex){
 System.out.println(""+ex);
 }
-}    
+} 
+    
     }//GEN-LAST:event_p_editMouseClicked
 
     /**
