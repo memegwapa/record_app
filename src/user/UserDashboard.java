@@ -5,7 +5,7 @@
  */
 package user;
 
-import class_record_app.Login;
+import Grade_viewingApp.Login;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 
@@ -26,15 +26,14 @@ public class UserDashboard extends javax.swing.JFrame {
         
         
   }
-      Color navcolor = new Color(204,188,255);
-      Color hovercolor = new Color(173,136,198);
+      Color navcolor = new Color(153,153,0);
+      Color hovercolor = new Color(204,204,0);
  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         j = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         das = new javax.swing.JPanel();
         dash = new javax.swing.JLabel();
         st = new javax.swing.JPanel();
@@ -43,7 +42,6 @@ public class UserDashboard extends javax.swing.JFrame {
         das3 = new javax.swing.JLabel();
         sub = new javax.swing.JPanel();
         das2 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
         jPanel5 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         acc_name1 = new javax.swing.JLabel();
@@ -72,13 +70,9 @@ public class UserDashboard extends javax.swing.JFrame {
             }
         });
 
-        j.setBackground(new java.awt.Color(173, 136, 198));
+        j.setBackground(new java.awt.Color(204, 204, 0));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\notebook-1117.png")); // NOI18N
-        jLabel1.setText("Class Record App");
-
-        das.setBackground(new java.awt.Color(173, 136, 198));
+        das.setBackground(new java.awt.Color(204, 204, 0));
         das.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 dasMouseClicked(evt);
@@ -91,7 +85,6 @@ public class UserDashboard extends javax.swing.JFrame {
         dash.setBackground(new java.awt.Color(153, 153, 153));
         dash.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         dash.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        dash.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\dashboard.png")); // NOI18N
         dash.setText("Dashboard");
 
         javax.swing.GroupLayout dasLayout = new javax.swing.GroupLayout(das);
@@ -110,7 +103,7 @@ public class UserDashboard extends javax.swing.JFrame {
                 .addGap(0, 2, Short.MAX_VALUE))
         );
 
-        st.setBackground(new java.awt.Color(173, 136, 198));
+        st.setBackground(new java.awt.Color(204, 204, 0));
         st.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 stMouseClicked(evt);
@@ -123,7 +116,6 @@ public class UserDashboard extends javax.swing.JFrame {
         das1.setBackground(new java.awt.Color(153, 153, 153));
         das1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         das1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        das1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\graduation.png")); // NOI18N
         das1.setText("Student List");
         das1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -147,7 +139,7 @@ public class UserDashboard extends javax.swing.JFrame {
                 .addComponent(das1))
         );
 
-        su.setBackground(new java.awt.Color(173, 136, 198));
+        su.setBackground(new java.awt.Color(204, 204, 0));
         su.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 suMouseClicked(evt);
@@ -160,7 +152,6 @@ public class UserDashboard extends javax.swing.JFrame {
         das3.setBackground(new java.awt.Color(153, 153, 153));
         das3.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         das3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        das3.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\books-stack-of-three.png")); // NOI18N
         das3.setText("Subject");
 
         javax.swing.GroupLayout suLayout = new javax.swing.GroupLayout(su);
@@ -179,7 +170,7 @@ public class UserDashboard extends javax.swing.JFrame {
                 .addComponent(das3))
         );
 
-        sub.setBackground(new java.awt.Color(173, 136, 198));
+        sub.setBackground(new java.awt.Color(204, 204, 0));
         sub.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 subMouseClicked(evt);
@@ -192,7 +183,6 @@ public class UserDashboard extends javax.swing.JFrame {
         das2.setBackground(new java.awt.Color(153, 153, 153));
         das2.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         das2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        das2.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\grade.png")); // NOI18N
         das2.setText("Grades");
 
         javax.swing.GroupLayout subLayout = new javax.swing.GroupLayout(sub);
@@ -210,8 +200,6 @@ public class UserDashboard extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(das2))
         );
-
-        jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -234,7 +222,6 @@ public class UserDashboard extends javax.swing.JFrame {
         });
 
         acc_name1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        acc_name1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\profile_4945750.png")); // NOI18N
         acc_name1.setText("User");
 
         acc_user.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -248,22 +235,16 @@ public class UserDashboard extends javax.swing.JFrame {
             .addGroup(jLayout.createSequentialGroup()
                 .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayout.createSequentialGroup()
-                        .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(su, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(st, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(das, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jLayout.createSequentialGroup()
-                                .addComponent(jSeparator1)
-                                .addGap(210, 210, 210))
-                            .addGroup(jLayout.createSequentialGroup()
-                                .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(su, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(st, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(das, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(jLayout.createSequentialGroup()
-                                        .addGap(36, 36, 36)
-                                        .addComponent(acc_name1)))
-                                .addGap(204, 204, 204)))
+                                .addGap(36, 36, 36)
+                                .addComponent(acc_name1)))
+                        .addGap(204, 204, 204)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1)
                     .addComponent(sub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jLayout.createSequentialGroup()
                         .addGap(21, 21, 21)
@@ -276,13 +257,10 @@ public class UserDashboard extends javax.swing.JFrame {
         jLayout.setVerticalGroup(
             jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(81, 81, 81)
                 .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayout.createSequentialGroup()
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(16, 16, 16)
                         .addComponent(acc_name1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(acc_user, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -300,7 +278,7 @@ public class UserDashboard extends javax.swing.JFrame {
                 .addGap(30, 30, 30))
         );
 
-        jPanel7.setBackground(new java.awt.Color(173, 136, 198));
+        jPanel7.setBackground(new java.awt.Color(153, 153, 0));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -315,10 +293,10 @@ public class UserDashboard extends javax.swing.JFrame {
 
         desh.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(new java.awt.Color(255, 230, 230));
+        jPanel1.setBackground(new java.awt.Color(255, 153, 153));
         jPanel1.setLayout(null);
 
-        stulist.setBackground(new java.awt.Color(225, 175, 209));
+        stulist.setBackground(new java.awt.Color(0, 153, 255));
         stulist.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
         stulist.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -328,8 +306,6 @@ public class UserDashboard extends javax.swing.JFrame {
                 stulistMouseExited(evt);
             }
         });
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\group (1).png")); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 20)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -358,7 +334,7 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel1.add(stulist);
         stulist.setBounds(120, 40, 190, 161);
 
-        subj.setBackground(new java.awt.Color(255, 204, 255));
+        subj.setBackground(new java.awt.Color(0, 153, 255));
         subj.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
         subj.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -373,8 +349,6 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Subject");
         jLabel12.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\text-books.png")); // NOI18N
 
         javax.swing.GroupLayout subjLayout = new javax.swing.GroupLayout(subj);
         subj.setLayout(subjLayout);
@@ -398,10 +372,10 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel1.add(subj);
         subj.setBounds(340, 40, 180, 160);
 
-        jPanel2.setBackground(new java.awt.Color(255, 230, 230));
+        jPanel2.setBackground(new java.awt.Color(255, 153, 153));
         jPanel2.setLayout(null);
 
-        gra.setBackground(new java.awt.Color(225, 175, 209));
+        gra.setBackground(new java.awt.Color(153, 0, 153));
         gra.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
         gra.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -416,8 +390,6 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Grades");
         jLabel6.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\student-grades_10177998 (1).png")); // NOI18N
 
         javax.swing.GroupLayout graLayout = new javax.swing.GroupLayout(gra);
         gra.setLayout(graLayout);
@@ -441,7 +413,7 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel2.add(gra);
         gra.setBounds(120, 10, 190, 160);
 
-        uss.setBackground(new java.awt.Color(255, 204, 255));
+        uss.setBackground(new java.awt.Color(153, 0, 153));
         uss.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
         uss.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -460,15 +432,13 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel14.setText("Account");
         jLabel14.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
 
-        jLabel15.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\user_11826008 (1).png")); // NOI18N
-
         javax.swing.GroupLayout ussLayout = new javax.swing.GroupLayout(uss);
         uss.setLayout(ussLayout);
         ussLayout.setHorizontalGroup(
             ussLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ussLayout.createSequentialGroup()
-                .addContainerGap(57, Short.MAX_VALUE)
+                .addContainerGap(121, Short.MAX_VALUE)
                 .addComponent(jLabel15)
                 .addGap(55, 55, 55))
         );
@@ -488,18 +458,20 @@ public class UserDashboard extends javax.swing.JFrame {
         desh.setLayout(deshLayout);
         deshLayout.setHorizontalGroup(
             deshLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(deshLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, deshLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(deshLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 650, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(deshLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(2, 2, 2))
         );
         deshLayout.setVerticalGroup(
             deshLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(deshLayout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -515,14 +487,11 @@ public class UserDashboard extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(j, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(desh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(0, 0, 0))
+            .addComponent(j, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(desh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -673,7 +642,6 @@ public class UserDashboard extends javax.swing.JFrame {
     private javax.swing.JPanel desh;
     private javax.swing.JPanel gra;
     private javax.swing.JPanel j;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -687,7 +655,6 @@ public class UserDashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JPanel st;
     private javax.swing.JPanel stulist;
     private javax.swing.JPanel su;

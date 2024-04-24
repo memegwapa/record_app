@@ -5,13 +5,8 @@
  */
 package user;
 
-import Admin.*;
-import class_record_app.Login;
-import java.awt.Color;
-import javax.swing.JOptionPane;
+import Grade_viewingApp.Login;
 
-import InternalPackage.Dash;
-import InternalPackage.userDash;
 import config.Session;
 
 
@@ -38,9 +33,6 @@ public class accountDetails extends javax.swing.JFrame {
     private void initComponents() {
 
         j = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jPanel5 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         acc_name1 = new javax.swing.JLabel();
         acc_user = new javax.swing.JLabel();
@@ -71,24 +63,7 @@ public class accountDetails extends javax.swing.JFrame {
             }
         });
 
-        j.setBackground(new java.awt.Color(173, 136, 198));
-
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\notebook-1117.png")); // NOI18N
-        jLabel1.setText("Class Record App");
-
-        jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
+        j.setBackground(new java.awt.Color(204, 204, 0));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(204, 0, 0));
@@ -100,7 +75,6 @@ public class accountDetails extends javax.swing.JFrame {
         });
 
         acc_name1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        acc_name1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\profile_4945750.png")); // NOI18N
 
         acc_user.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         acc_user.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -124,19 +98,8 @@ public class accountDetails extends javax.swing.JFrame {
             .addGroup(jLayout.createSequentialGroup()
                 .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayout.createSequentialGroup()
-                        .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jLayout.createSequentialGroup()
-                                .addComponent(jSeparator1)
-                                .addGap(0, 0, 0))
-                            .addGroup(jLayout.createSequentialGroup()
-                                .addGap(36, 36, 36)
-                                .addComponent(acc_name1)
-                                .addGap(76, 76, 76)))
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1)
-                    .addGroup(jLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(acc_user, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(36, 36, 36)
+                        .addComponent(acc_name1))
                     .addGroup(jLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel4))
@@ -144,33 +107,29 @@ public class accountDetails extends javax.swing.JFrame {
                         .addGap(32, 32, 32)
                         .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(iddisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel12))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel12)))
+                    .addGroup(jLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(acc_user, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         jLayout.setVerticalGroup(
             jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayout.createSequentialGroup()
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(acc_name1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(acc_user, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(74, 74, 74)
+                .addComponent(acc_name1)
+                .addGap(91, 91, 91)
+                .addComponent(acc_user, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(iddisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 227, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(19, 19, 19))
         );
 
-        jPanel7.setBackground(new java.awt.Color(173, 136, 198));
+        jPanel7.setBackground(new java.awt.Color(153, 153, 0));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -183,9 +142,9 @@ public class accountDetails extends javax.swing.JFrame {
             .addGap(0, 54, Short.MAX_VALUE)
         );
 
-        desh.setBackground(new java.awt.Color(255, 255, 255));
+        desh.setBackground(new java.awt.Color(0, 204, 204));
 
-        table.setBackground(new java.awt.Color(255, 204, 255));
+        table.setBackground(new java.awt.Color(255, 153, 153));
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -227,10 +186,10 @@ public class accountDetails extends javax.swing.JFrame {
         at.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "User" }));
         at.setToolTipText("");
 
-        jLabel11.setBackground(new java.awt.Color(225, 175, 209));
+        jLabel11.setBackground(new java.awt.Color(204, 204, 255));
         jLabel11.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Class Record App");
+        jLabel11.setText("Grade Viewing App");
         jLabel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jLabel11.setOpaque(true);
 
@@ -249,10 +208,8 @@ public class accountDetails extends javax.swing.JFrame {
                             .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(tableLayout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(tableLayout.createSequentialGroup()
                                 .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel9)
                                     .addComponent(jLabel10)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE)))
@@ -270,11 +227,11 @@ public class accountDetails extends javax.swing.JFrame {
                         .addComponent(at, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(tableLayout.createSequentialGroup()
-                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(183, 183, 183))
-            .addGroup(tableLayout.createSequentialGroup()
-                .addGap(78, 78, 78)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(tableLayout.createSequentialGroup()
+                        .addGap(78, 78, 78)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         tableLayout.setVerticalGroup(
@@ -324,7 +281,7 @@ public class accountDetails extends javax.swing.JFrame {
             .addGroup(deshLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(table, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -333,7 +290,7 @@ public class accountDetails extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(desh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -433,13 +390,12 @@ public class accountDetails extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel acc_name1;
     private javax.swing.JLabel acc_user;
-    private javax.swing.JComboBox<String> at;
+    public javax.swing.JComboBox<String> at;
     private javax.swing.JPanel desh;
-    private javax.swing.JTextField em;
-    private javax.swing.JTextField fn;
+    public javax.swing.JTextField em;
+    public javax.swing.JTextField fn;
     private javax.swing.JLabel iddisplay;
     private javax.swing.JPanel j;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -450,12 +406,10 @@ public class accountDetails extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField ln;
-    private javax.swing.JTextField ps;
+    public javax.swing.JTextField ln;
+    public javax.swing.JTextField ps;
     private javax.swing.JPanel table;
-    private javax.swing.JTextField un;
+    public javax.swing.JTextField un;
     // End of variables declaration//GEN-END:variables
 }

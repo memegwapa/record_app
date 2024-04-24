@@ -27,8 +27,8 @@ public class UserForms extends javax.swing.JFrame {
      displayData();
     
   }
-      Color navcolor = new Color(204,188,255);
-      Color hovercolor = new Color(173,136,198);
+      Color navcolor = new Color(153,153,0);
+      Color hovercolor = new Color(204,204,0);
     public void displayData(){
        try{
            dbConnector dbc = new dbConnector();
@@ -50,7 +50,6 @@ public class UserForms extends javax.swing.JFrame {
     private void initComponents() {
 
         j = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -75,12 +74,8 @@ public class UserForms extends javax.swing.JFrame {
             }
         });
 
-        j.setBackground(new java.awt.Color(173, 136, 198));
+        j.setBackground(new java.awt.Color(204, 204, 0));
         j.setPreferredSize(new java.awt.Dimension(531, 517));
-
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\notebook-1117.png")); // NOI18N
-        jLabel1.setText("Class Record App");
 
         jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
 
@@ -96,11 +91,11 @@ public class UserForms extends javax.swing.JFrame {
         );
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\profile_4945750.png")); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\shiel_uufqv03\\Downloads\\user.png")); // NOI18N
         jLabel2.setText("User");
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\user.png")); // NOI18N
         jLabel3.setText("Hello, User");
 
         acc_id.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -111,7 +106,7 @@ public class UserForms extends javax.swing.JFrame {
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Current User");
 
-        p_add.setBackground(new java.awt.Color(173, 136, 198));
+        p_add.setBackground(new java.awt.Color(204, 204, 0));
         p_add.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 p_addMouseClicked(evt);
@@ -132,7 +127,7 @@ public class UserForms extends javax.swing.JFrame {
         p_add.add(jLabel8);
         jLabel8.setBounds(50, 0, 117, 24);
 
-        p_edit.setBackground(new java.awt.Color(173, 136, 198));
+        p_edit.setBackground(new java.awt.Color(204, 204, 0));
         p_edit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 p_editMouseClicked(evt);
@@ -158,7 +153,6 @@ public class UserForms extends javax.swing.JFrame {
             jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayout.createSequentialGroup()
                 .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
                     .addGroup(jLayout.createSequentialGroup()
                         .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -178,9 +172,7 @@ public class UserForms extends javax.swing.JFrame {
         jLayout.setVerticalGroup(
             jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(80, 80, 80)
                 .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayout.createSequentialGroup()
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -193,14 +185,14 @@ public class UserForms extends javax.swing.JFrame {
                 .addComponent(p_add, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(p_edit, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 198, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(acc_id, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
 
-        jPanel7.setBackground(new java.awt.Color(173, 136, 198));
+        jPanel7.setBackground(new java.awt.Color(153, 153, 0));
         jPanel7.setPreferredSize(new java.awt.Dimension(0, 46));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -229,7 +221,7 @@ public class UserForms extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        desh.setBackground(new java.awt.Color(225, 175, 209));
+        desh.setBackground(new java.awt.Color(255, 153, 153));
         desh.setPreferredSize(new java.awt.Dimension(592, 565));
 
         userTable.setOpaque(false);
@@ -239,7 +231,7 @@ public class UserForms extends javax.swing.JFrame {
         desh.setLayout(deshLayout);
         deshLayout.setHorizontalGroup(
             deshLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 592, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(deshLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(deshLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -264,16 +256,19 @@ public class UserForms extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 592, Short.MAX_VALUE)
-                    .addComponent(desh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(desh, javax.swing.GroupLayout.DEFAULT_SIZE, 550, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, 0)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 550, Short.MAX_VALUE)
+                        .addGap(0, 0, 0))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(desh, javax.swing.GroupLayout.DEFAULT_SIZE, 581, Short.MAX_VALUE))
-            .addComponent(j, javax.swing.GroupLayout.DEFAULT_SIZE, 627, Short.MAX_VALUE)
+                .addComponent(desh, javax.swing.GroupLayout.DEFAULT_SIZE, 485, Short.MAX_VALUE))
+            .addComponent(j, javax.swing.GroupLayout.DEFAULT_SIZE, 531, Short.MAX_VALUE)
         );
 
         pack();
@@ -386,7 +381,6 @@ System.out.println(""+ex);
     private javax.swing.JLabel acc_id;
     private javax.swing.JPanel desh;
     private javax.swing.JPanel j;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

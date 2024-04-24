@@ -6,9 +6,9 @@
 package Admin;
 
 
-import class_record_app.Login;
-import static class_record_app.Register.email;
-import static class_record_app.Register.usname;
+import Grade_viewingApp.Login;
+import static Grade_viewingApp.Register.email;
+import static Grade_viewingApp.Register.usname;
 import config.dbConnector;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -122,9 +122,9 @@ return false;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 230, 230));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
 
-        table.setBackground(new java.awt.Color(255, 255, 255));
+        table.setBackground(new java.awt.Color(255, 153, 153));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -171,10 +171,10 @@ return false;
         at.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "User" }));
         at.setToolTipText("");
 
-        jLabel11.setBackground(new java.awt.Color(225, 175, 209));
+        jLabel11.setBackground(new java.awt.Color(204, 204, 255));
         jLabel11.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Class Record App");
+        jLabel11.setText("Grade Viewing App");
         jLabel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jLabel11.setOpaque(true);
 
@@ -301,11 +301,11 @@ return false;
                             .addComponent(ut, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(tableLayout.createSequentialGroup()
-                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(183, 183, 183))
-            .addGroup(tableLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(tableLayout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         tableLayout.setVerticalGroup(

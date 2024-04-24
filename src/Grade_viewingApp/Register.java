@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package class_record_app;
+package Grade_viewingApp;
 
 import config.dbConnector;
 import config.passwordHasher;
@@ -80,9 +80,9 @@ return false;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 230, 230));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(255, 153, 153));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -142,10 +142,10 @@ return false;
             }
         });
 
-        jLabel11.setBackground(new java.awt.Color(225, 175, 209));
+        jLabel11.setBackground(new java.awt.Color(204, 204, 255));
         jLabel11.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Class Record App");
+        jLabel11.setText("Grade Viewing App");
         jLabel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jLabel11.setOpaque(true);
 
@@ -289,7 +289,7 @@ return false;
    try{
 String ps=  passwordHasher.hashPassword(pass.getText());
 if( dbc.insertData("INSERT INTO tbl_user(u_fname, u_lname, u_email,u_username, u_password, u_type, u_status)"
-        + "VALUES ('"+fn.getText()+"', '"+ln.getText()+"', '"+em.getText()+"', '" + un.getText()+"', '" +pass.getText()+"', '"+ at.getSelectedItem()+"', ' Pending')"))
+        + "VALUES ('"+fn.getText()+"', '"+ln.getText()+"', '"+em.getText()+"', '" + un.getText()+"', '" +ps+"', '"+ at.getSelectedItem()+"', ' Pending')"))
 {
      JOptionPane.showMessageDialog(null, "Registration Success!");
     Login Ig = new Login();

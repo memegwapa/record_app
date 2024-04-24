@@ -6,11 +6,11 @@
 package user;
 
 import Admin.*;
-import class_record_app.Login;
+import Grade_viewingApp.Login;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 
-import InternalPackage.Dash;
+
 import InternalPackage.userDash;
 import config.Session;
 import config.dbConnector;
@@ -42,11 +42,11 @@ public class ChangePass extends javax.swing.JFrame {
         j = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jPanel5 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         acc_name1 = new javax.swing.JLabel();
         acc_user = new javax.swing.JLabel();
         iddisplay = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         desh = new javax.swing.JPanel();
@@ -71,23 +71,11 @@ public class ChangePass extends javax.swing.JFrame {
             }
         });
 
-        j.setBackground(new java.awt.Color(173, 136, 198));
+        j.setBackground(new java.awt.Color(204, 204, 0));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\notebook-1117.png")); // NOI18N
 
         jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(204, 0, 0));
@@ -99,7 +87,6 @@ public class ChangePass extends javax.swing.JFrame {
         });
 
         acc_name1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        acc_name1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\profile_4945750.png")); // NOI18N
 
         acc_user.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         acc_user.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -108,52 +95,52 @@ public class ChangePass extends javax.swing.JFrame {
         iddisplay.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         iddisplay.setText("UID:");
 
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\shiel_uufqv03\\Downloads\\account.png")); // NOI18N
+
         javax.swing.GroupLayout jLayout = new javax.swing.GroupLayout(j);
         j.setLayout(jLayout);
         jLayout.setHorizontalGroup(
             jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayout.createSequentialGroup()
                 .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayout.createSequentialGroup()
-                        .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jSeparator1)
-                            .addGroup(jLayout.createSequentialGroup()
-                                .addGap(36, 36, 36)
-                                .addComponent(acc_name1)
-                                .addGap(76, 76, 76)))
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jSeparator1)
+                        .addGroup(jLayout.createSequentialGroup()
+                            .addGap(36, 36, 36)
+                            .addComponent(acc_name1)
+                            .addGap(76, 76, 76)))
                     .addComponent(jLabel1)
                     .addGroup(jLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(acc_user, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel4))
+                        .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(iddisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(acc_user, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(iddisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         jLayout.setVerticalGroup(
             jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayout.createSequentialGroup()
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(acc_name1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(acc_user, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(acc_name1)
                 .addGap(18, 18, 18)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(acc_user, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
                 .addComponent(iddisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(19, 19, 19))
         );
 
-        jPanel7.setBackground(new java.awt.Color(173, 136, 198));
+        jPanel7.setBackground(new java.awt.Color(153, 153, 0));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setText("Change Password");
@@ -175,9 +162,9 @@ public class ChangePass extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        desh.setBackground(new java.awt.Color(255, 204, 255));
+        desh.setBackground(new java.awt.Color(0, 204, 204));
 
-        table.setBackground(new java.awt.Color(255, 204, 255));
+        table.setBackground(new java.awt.Color(255, 153, 153));
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -186,10 +173,10 @@ public class ChangePass extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         jLabel6.setText("Confirm Pass:");
 
-        jLabel11.setBackground(new java.awt.Color(225, 175, 209));
+        jLabel11.setBackground(new java.awt.Color(204, 204, 255));
         jLabel11.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Class Record App");
+        jLabel11.setText("Grade Viewing App");
         jLabel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jLabel11.setOpaque(true);
 
@@ -234,13 +221,6 @@ public class ChangePass extends javax.swing.JFrame {
         table.setLayout(tableLayout);
         tableLayout.setHorizontalGroup(
             tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(tableLayout.createSequentialGroup()
-                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(183, 183, 183))
-            .addGroup(tableLayout.createSequentialGroup()
-                .addGap(78, 78, 78)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tableLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -259,6 +239,13 @@ public class ChangePass extends javax.swing.JFrame {
                     .addComponent(oldpass)
                     .addComponent(conpass))
                 .addGap(265, 265, 265))
+            .addGroup(tableLayout.createSequentialGroup()
+                .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(tableLayout.createSequentialGroup()
+                        .addGap(78, 78, 78)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 387, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         tableLayout.setVerticalGroup(
             tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -282,7 +269,7 @@ public class ChangePass extends javax.swing.JFrame {
                 .addGroup(tableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(149, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout deshLayout = new javax.swing.GroupLayout(desh);
@@ -292,7 +279,7 @@ public class ChangePass extends javax.swing.JFrame {
             .addGroup(deshLayout.createSequentialGroup()
                 .addGap(152, 152, 152)
                 .addComponent(table, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(152, 152, 152))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
         deshLayout.setVerticalGroup(
             deshLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -308,10 +295,10 @@ public class ChangePass extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(desh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(desh, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -361,7 +348,7 @@ String oldhash =passwordHasher.hashPassword(oldpass.getText());
 if(olddbpass.equals(oldhash)){
     
 String npass = passwordHasher.hashPassword(newpass.getText());
-dbc.updateData("UPDATE tbl_user SET u_password = "+npass+"'");
+dbc.updateData("UPDATE tbl_user SET u_password = '"+npass+"' WHERE u_id = '"+sess.getUid()+"'");
 JOptionPane.showMessageDialog(null, "Successfully Updated!");
 Login Ig = new Login();
 Ig.setVisible(true);
@@ -440,9 +427,9 @@ JOptionPane.showMessageDialog(null, "Old Password is Incorrect!");
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JSeparator jSeparator1;
     public javax.swing.JTextField newpass;
